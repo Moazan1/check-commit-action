@@ -1,0 +1,31 @@
+{
+  "name": "checkpushtypeaction",
+  "version": "1.0.0",
+  "description": "Checks whether the commit message wants to be build or not",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"ncc build index.js -o dist --source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moazan1/CheckPushTypeAction.git"
+  },
+  "keywords": [
+    "My",
+    "github",
+    "Action"
+  ],
+  "author": "Moazan Amjad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moazan1/CheckPushTypeAction/issues"
+  },
+  "homepage": "https://github.com/Moazan1/CheckPushTypeAction#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.27.0"
+  }
+}
