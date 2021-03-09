@@ -1,0 +1,17 @@
+name: Check Push Type
+description: Checks whether the commit message wants to be build or not
+inputs:
+
+  commit_message:
+    description: "Message to read from"
+    required: true
+
+outputs:
+  
+  AllowBuild:
+    description: "true or false if allow build"
+
+runs:
+
+  using: 'node12'
+  main: dist/index.js
